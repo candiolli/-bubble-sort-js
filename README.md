@@ -1,2 +1,2 @@
-# -bubble-sort-js
+# bubble-sort-js
 Bubble sort algorithm implemented in Javascript
