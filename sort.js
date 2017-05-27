@@ -15,7 +15,6 @@ function sort(list) {
 }
 
 function testSortSmallArray() {
-    console.log('testSortBigArray');
     var list = [6,5,7,3,2,1,4];
     var sorted = sort(list);
     var validate = true;
@@ -24,12 +23,11 @@ function testSortSmallArray() {
             validate = false;
         }
     }
-    console.log('sorted', sorted);
-    console.log('testSortBigArray', validate);
+    
+    console.log('testSortBigArray result:'+sorted+', assert:', validate);
 }
 
 function testSortBigArray() {
-    console.log('testSortBigArray');
     var list = [15,8,6,5,7,3,10,9,2,1,4,11,14,12,16,13];
     var sorted = sort(list);
     var validate = true;
@@ -38,12 +36,11 @@ function testSortBigArray() {
             validate = false;
         }
     }
-    console.log('sorted', sorted);
-    console.log('testSortBigArray', validate);
+    
+    console.log('testSortBigArray result:'+sorted+', assert:', validate);
 }
 
 function testFailSortIntervalBigArray() {
-    console.log('testSortBigArray');
     var list = [15,,8,6,5,7,3,10,9,2,1,4,,11,14,,12,16,13];
     var sorted = sort(list);
     var validate = true;
@@ -52,8 +49,8 @@ function testFailSortIntervalBigArray() {
             validate = false;
         }
     }
-    console.log('sorted', sorted);
-    console.log('testSortBigArray', validate);
+    
+    console.log('testSortBigArray result:'+sorted+', assert:', validate);
 }
 
 
